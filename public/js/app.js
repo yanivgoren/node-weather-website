@@ -22,7 +22,7 @@ weatherForm.addEventListener('submit', (e) => {
     messageOne.textContent = 'Loading...'
     messageTwo.textContent = ''
 
-    fetch(url).then((response) => {
+    fetch(url).then((response) => {}
                 log(response)
         response.json().then((data) => {
             if(data.error){
