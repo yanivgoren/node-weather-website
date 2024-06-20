@@ -36,7 +36,7 @@ app.get('', (req,res) => {
 app.get('/help', (req,res) => {
     res.render('help', {
         title: 'Help',
-        helpText: 'This is some hgelpful text',
+        helpText: 'Enter any desire location and press on the search button to get the weather data.',
         name: 'Yaniv Goren'
     })
 })
@@ -44,6 +44,7 @@ app.get('/help', (req,res) => {
 app.get('/about', (req,res) => {
     res.render('about', {
         title: 'About Me',
+        text1: 'This weather site allow everyone to get current weather and rain chance around the world.',
         name: 'Yaniv Goren',
         myImage: '/img/me.png'
     })
